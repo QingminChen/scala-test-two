@@ -5,6 +5,9 @@ object Color extends Enumeration{
   val Red = "valueTest"
   val Green = "valueTest"
   val Blue = "valueTest"
+  val Yellow = "valueTest"
+  val Indigo = "valueTest"
+  val  Violet = "valueTest"
 
   //如果三个参数右边的值一样，还可以写成这样
   //val Red,Green,Blue = "valueTest"
