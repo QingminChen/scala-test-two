@@ -51,13 +51,13 @@ trait AbstractTime{
   var minute:Int
 }
 
-trait Rational{
+trait RationalAll{
   val numberArg:Int
   val denomArg:Int
 
 }
 
-object RationalTest extends Rational{
+object RationalTest extends RationalAll{
   val numberArg = 1
   val denomArg =2
 
@@ -66,7 +66,7 @@ object RationalTest extends Rational{
 class RationalClass(n:Int,d:Int) extends {
   val numberArg = n
   val denomArg = d
-}with Rational {
+}with RationalAll {
 
   //  def + (that:RationalClass) = new RationalClass{
   //    numberArg*that.denomArg +that.numberArg*denomArg,denomArg*that.denomArg
@@ -89,10 +89,10 @@ class RationalClass(n:Int,d:Int) extends {
   }
 
   object test extends App {
-    Demo //这里没有lazy，所以在初始化类型的时候，就初始化了x的值
-    println("1")
-    Demo.x
-    println("2")
+//    Demo //这里没有lazy，所以在初始化类型的时候，就初始化了x的值
+//    println("1")
+//    Demo.x
+//    println("2")
     //  Demo2
     //  println("3")
     //  Demo2.x
