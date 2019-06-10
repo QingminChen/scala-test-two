@@ -8,14 +8,14 @@ abstract class Email {
 }
 
 object Email extends App{
-//  val emailAddress = "qingmin.chen@accenture.com"
+//  val emailAddress = "cqm22222222@hotmail.com"
 //  if(Email.isEmail(emailAddress)) {
 //    println(user(emailAddress)+" AT "+domain(emailAddress))
 //  }else{
 //    println("not an email address")
 //  }
   /**
-    * apply这个方法使得email对象可以直接使用括号应用方法的参数，例如可以直接写为：Email("qingmin.chen","accenture.com")构造字符串qingmin.chen@accenture.com
+    * apply这个方法使得email对象可以直接使用括号应用方法的参数，例如可以直接写为：Email("cqm22222222","hotmail.com")构造字符串cqm22222222@hotmail.com
     * unapply这个方法是Email称为抽取器的原因，apply是将两个传入的字符串拼成一个email地址字符串返回，而unapply则是传入email地址字符串并返回可能存在的两个字符串
     * 地址和域
     * 但unapply必须还能传力传入字符串并非email地址的情况，这也是为什么它返回的是Option类型的字符串对偶的原因
